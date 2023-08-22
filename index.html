@@ -6,30 +6,31 @@
     <link rel="stylesheet" href="./styles.css">
     <script defer src="script.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Verificar_Edad</title>
 </head>
 
 <body>
     <div class="content">
         <div class="texto">
-            <h1 id="titulo">Verificación de edad</h1>
-            <p id="subtitulo">Introduce los siguientes datos:</p>
+            <h1 id="titulo" data-aos="zoom-in" data-aos-delay="200">Verificación de edad</h1>
+            <p id="subtitulo" data-aos="zoom-in-up" data-aos-delay="600">Introduce los siguientes datos:</p>
         </div>
 
         <div class="formulario">
             <form action="" id="form">
                 <div class="inputContent nombre">
-                    <p>Nombre:</p>
-                    <input class="inputForm" type="text" id="name" autofocus>
+                    <p data-aos="fade-right" data-aos-delay="700">Nombre:</p>
+                    <input class="inputForm" type="text" id="name" autofocus data-aos="fade-left" data-aos-delay="900">
                 </div>
 
                 <div class="inputContent edad">
-                    <p>Edad:</p>
-                    <input class="inputForm" type="number" id="age">
+                    <p data-aos="fade-right" data-aos-delay="700">Edad:</p>
+                    <input class="inputForm" type="number" id="age" data-aos="fade-left" data-aos-delay="900">
                 </div>
 
                 <div class="btn">
-                    <button class="btnInside" type="submit">Enviar datos</button>
+                    <button class="btnInside" type="submit" data-aos="fade-up" data-aos-delay="1000">Enviar datos</button>
                 </div>
 
             </form>
@@ -41,11 +42,15 @@
 
         <div class="footerContent">
             <a class="footer" href="https://github.com/Juankyyy">
-                <p>Hecho por Juankyyy</p>
+                <p>Juankyyy</p>
             </a>
         </div>
     </div>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
