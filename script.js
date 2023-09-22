@@ -24,14 +24,14 @@ formulario.addEventListener("submit", validarForm)
 function verificarEdad () {
     const edad = document.querySelector("#age").value;
 
-    if (edad > 0 && edad < 17) {
+    if (edad > 0 && edad <= 17) {
         return "eres menor de edad";
 
     } else if (edad >= 18 && edad < 60) {
         return "eres mayor de edad";
 
     } else if (edad >= 60 && edad <= 115) {
-        return "eres adulto mayor";
+        return "eres un adulto mayor";
     }
 
     else {
