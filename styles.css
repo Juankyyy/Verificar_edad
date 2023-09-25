@@ -123,7 +123,7 @@ html {
 }
 
 .footerContent {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 0px;
     padding: 10px;
@@ -138,4 +138,41 @@ html {
 
 .footer:hover {
     color: #7282ff;
+}
+
+@media (max-width: 570px) {
+    .content {
+        width: 100vw;
+    }
+
+    .texto {
+        min-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textValidacion {
+        min-width: 70vw;
+    }
+
+    #validacion {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #titulo {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 335px) {
+    #titulo {
+        font-size: 20px;
+    }
+
+    #subtitulo {
+        font-size: 13px;
+    }
 }

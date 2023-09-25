@@ -59,15 +59,15 @@ function validarForm (e) {
 
 // Función para verificar si se está abriendo la página desde un dispositivo móvil
 function isMobile () {
-    return window.innerWidth <= 526;
+    return window.innerWidth <= 615;
 }
 
 // Si se está abriendo en un celular muestra una alerta
 function handleMobile() {
     if (isMobile()) {
-        alert("Disculpe este sitio web no está optimizado para dispositivos móviles :(")
+        animations = document.querySelector("#ani")
+        animations.remove()
         
-        // Eliminar evento que escucha si redimensionan la página para evitar múltiples alertas
         window.removeEventListener("resize", handleMobile);
     }
 }
