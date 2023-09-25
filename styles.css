@@ -42,6 +42,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -67,6 +68,9 @@ html {
     padding: 5px;
     padding-left: 10px;
     margin-left: 30px;
+    width: 20vw;
+    max-width: 200px;
+    min-width: 100px;
 }
 
 .inputFormNew {
@@ -81,6 +85,10 @@ html {
 .inputForm:focus {
     background-color: #4e4e4e;
     outline: none;
+}
+
+.labelForm {
+    font-size: 16px;
 }
 
 .btn {
@@ -101,7 +109,9 @@ html {
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
-    width: 50%;
+    width: 50vw;
+    max-width: 150px;
+    min-width: 104px;
 }
 
 .btnInsideNew {
@@ -153,6 +163,14 @@ html {
         align-items: center;
     }
 
+    .inputForm {
+        margin-left: 20px;
+    }
+
+    .labelForm {
+        font-size: 15px;
+    }
+
     .textValidacion {
         min-width: 70vw;
     }
@@ -173,6 +191,10 @@ html {
     }
 
     #subtitulo {
+        font-size: 13px;
+    }
+
+    .labelForm {
         font-size: 13px;
     }
 }
